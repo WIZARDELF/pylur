@@ -1,6 +1,6 @@
-pom.xml
-pom.xml.asc
-*jar
+__pycache__
+*.jar
+*.pyc
 /lib/
 /classes/
 /target/
