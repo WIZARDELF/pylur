@@ -6,9 +6,11 @@ class LRU(object):
     """
     def __init__(self, capacity):
         """
-        arg:
+        constructor.
+
+        args:
             capacity: a positive integer, indicating the capacity of the cache
-        val:
+        returns:
             none.
         """
         self.capacity = capacity
@@ -18,9 +20,10 @@ class LRU(object):
     def get(self, key):
         """
         get a value by the key: if the cache contains the key, retrieve the value from cache; otherwise, return None.
-        arg:
+
+        args:
             key: the key associated with a value
-        val:
+        returns:
             the value mapped to the key if it's in cache; otherwise, None.
         """
         r = None
@@ -31,10 +34,11 @@ class LRU(object):
     def put(self, key, val):
         """
         associate the value with the key, and put the entry into cache.
-        arg:
+
+        args:
             key: the key associated with val
             val: the value associating with key
-        val:
+        returns:
             None.
         """
         v = dllistnode(val)
