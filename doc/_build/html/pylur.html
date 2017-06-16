@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pylur module &mdash; src  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="src  documentation" href="index.html" />
+    <link rel="prev" title="Welcome to src’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to src’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">src  documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-pylur">
+<span id="pylur-module"></span><h1>pylur module<a class="headerlink" href="#module-pylur" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pylur.LRU">
+<em class="property">class </em><tt class="descclassname">pylur.</tt><tt class="descname">LRU</tt><big>(</big><em>capacity</em><big>)</big><a class="reference internal" href="_modules/pylur.html#LRU"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pylur.LRU" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">builtins.object</span></tt></p>
+<p>this is a class providing the <a href="#id1"><span class="problematic" id="id2">`</span></a>least recently used&#8217; (LRU) cache eviction policy.</p>
+<p>constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>capacity</strong> &#8211; a positive integer, indicating the capacity of the cache</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">none.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pylur.LRU.clear">
+<tt class="descname">clear</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/pylur.html#LRU.clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pylur.LRU.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>clear the cache, and reset all parameters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pylur.LRU.get">
+<tt class="descname">get</tt><big>(</big><em>key</em><big>)</big><a class="reference internal" href="_modules/pylur.html#LRU.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pylur.LRU.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>get a value by the key: if the cache contains the key, retrieve the value from cache; otherwise, return None.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>key</strong> &#8211; the key associated with a value</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the value mapped to the key if it&#8217;s in cache; otherwise, None.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pylur.LRU.put">
+<tt class="descname">put</tt><big>(</big><em>key</em>, <em>val</em><big>)</big><a class="reference internal" href="_modules/pylur.html#LRU.put"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pylur.LRU.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>associate the value with the key, and put the entry into cache.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>key</strong> &#8211; the key associated with val</li>
+<li><strong>val</strong> &#8211; the value associating with key</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to src&#8217;s documentation!</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/pylur.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to src’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">src  documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2017, Author.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>
